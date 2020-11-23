@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+               <meta charset="UTF-8">
+               <title>Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+p{
+                 color:red;
+                 margin:5px;
+                 cursor:pointer;
+}
+p:hover{
+                 background:yellow;
+}
+</style>
+</head>
+<body>
+
+<p>商品說明</p>
+
+<div class="product" align=center>
+<h1>全功能客語機器人</h1>
+<img src="01.jpg">
+</div>
+<script>
+$("p").click(function(){
+                  $(".product").slideToggle();
+});
+</script>
+</body>
+</html>
